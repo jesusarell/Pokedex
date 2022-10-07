@@ -1,0 +1,190 @@
+:root {
+    --size-xs: 8px;
+    --size-s: 16px;
+    --size-m: 24px;
+    --size-l: 32px;
+    --size-xl: 64px;
+    --size-xxl: 86px;
+    --color-grass: #74CB48;
+    --color-blackshadow: rgba(0, 0, 0, 0.25);
+    --color-white: #FFFFFF;
+    --color-poison: #70559B;
+}
+
+
+/* .container {
+    padding: var(--size-l) var(--size-xxl);
+} */
+
+.card {
+    background-color: var(--color-grass);
+    width: 18.75rem;
+    height: 25rem;
+    border-radius: 0.75rem;
+    box-shadow: 0.125rem 0.125rem .25rem var(--color-blackshadow);
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    padding-bottom: 0rem;
+}
+
+.card__title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--color-white);
+}
+
+.card__id {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--color-white);
+}
+
+.card__img {
+    display: flex;
+    justify-content: center;
+}
+
+.card__img--dim {
+    width: 9.375rem;
+    height: 9.375rem;
+    z-index: 10;
+}
+
+.card__characteristics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-white);
+    margin: 0.313rem;
+    top: -3.507rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    padding-top: 3rem;
+}
+
+.card__types {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.625rem;
+    line-height: 1rem;
+    color: var(--color-white);
+}
+
+.card__types--grass {
+    background-color: var(--color-grass);
+    border-radius: 0.625rem;
+    padding: 0.125rem .5rem;
+    margin: 0.5rem;
+}
+
+.card__types--poison {
+    background-color: var(--color-poison);
+    border-radius: 0.625rem;
+    padding: 0.125rem .5rem;
+    margin: 0.5rem;
+}
+
+.card__about {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 1rem;
+}
+
+.card__about--grass {
+    color: var(--color-grass);
+}
+
+.card__metrics {
+    display: flex;
+}
+
+.darkContainer {
+    background-color: #2E404D;
+}
+
+.title {
+    font-size: var(--size-xl);
+    font-weight: 600;
+    margin-bottom: var(--size-s);
+}
+
+.subtitle {
+    font-size: var(--size-l);
+    margin-bottom: var(--size-l);
+}
+
+.inputLabel {
+    font-size: var(--size-m);
+    margin-bottom: var(--size-s);
+}
+
+.inputContainer {
+    display: flex;
+    gap: var(--size-s);
+    margin-bottom: var(--size-l);
+}
+
+.characterSelector {
+    font-size: var(--size-l);
+    padding: var(--size-xs);
+    min-width: 200px;
+    border-radius: var(--size-xs);
+}
+
+.clearButton {
+    font-size: var(--size-s);
+    border-radius: var(--size-xs);
+    border: none;
+    color: white;
+    background-color: var(--color-primary);
+    padding: 0 var(--size-s);
+}
+
+.comicCard {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-s);
+    margin-bottom: var(--size-l);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--size-xs);
+    padding: var(--size-s);
+}
+
+.comicTitle {
+    font-size: var(--size-m);
+    font-weight: bold;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: var(--size-xs);
+    margin-bottom: var(--size-m);
+}
+
+.checkboxLabel {
+    font-size: var(--size-m);
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
